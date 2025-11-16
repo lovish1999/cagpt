@@ -1,0 +1,14 @@
+# Don't include these in Docker image
+.git
+.gitignore
+.env
+venv/
+env/
+*.pyc
+__pycache__/
+.DS_Store
+.idea/
+.vscode/
+*.md
+restart_server.sh
+k8s/

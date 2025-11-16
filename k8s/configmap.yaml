@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cagpt-config
+data:
+  embedding-model: "text-embedding-3-large"
+  chat-model: "gpt-4o-mini"

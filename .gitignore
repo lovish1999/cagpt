@@ -1,6 +1,9 @@
 # Environment variables
 .env
 
+# Kubernetes secrets (never commit these!)
+k8s/secret.yaml
+
 # Python
 __pycache__/
 *.py[cod]
@@ -21,5 +24,5 @@ env/
 Thumbs.db
 
 # Project specific
-*.faiss
-kb_meta.json
+# Note: kb_index.faiss and kb_meta.json are needed for deployment
+# They should be committed to the repo

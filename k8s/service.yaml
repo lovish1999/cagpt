@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: cagpt-service
+  labels:
+    app: cagpt
+spec:
+  type: LoadBalancer  # Use NodePort for Minikube, LoadBalancer for cloud providers
+  selector:
+    app: cagpt
+  ports:
+  - protocol: TCP
+    port: 80          # External port
+    targetPort: 8000  # Container port
